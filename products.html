@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="allCss.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymond Bakeries</title>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      border-radius: 5px;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .container {
+      padding: 2px 16px;
+    }
+    :root{
+      --dis: block;
+    }
+    .sticky{
+      position: fixed;
+      top: 0;
+      background-color: white;
+    }
+    
+    ul.topnav li {float: left;}
+
+  </style>
+</head>
+<body>
+  <!-- Top top information -->
+  <div class="w-full h-6 2xl:px-48" style="background-color: #F3F4F6;">
+    <div class="w-full h-6 lg:px-32 px-2 flex">
+      <p class="text-gray-800 text-sm w-full">Phone: +263 77 343 1504 &nbsp; &nbsp; &nbsp; Email: help@raymondbakeries.co.zw</p>
+      <p class="text-gray-800 text-sm w-full" style="text-align: end;">English</p>
+    </div>
+  </div>
+
+  <!-- Top Navigation bar -->
+  <div class="w-full h-16 2xl:px-48 shadow-xl border-b border-gray-400" id="myHeader">
+    <div class="h-full px-2 lg:px-32 flex">
+      <!-- Raymond Bakeries logo -->
+      <a href="index.html" class="w-24"><img class="h-full" src="imgs/logo.png" alt="logo"></a>
+      <div class="px- w-full">
+        <p class="text-lg xl:text-2xl font-semibold" style="color: #1F2937;">Raymond Bakeries</p>
+        <p class="text-sm font-semibold" style="color: #34D399;" >Delicious bakeries at your doorstep</p>
+      </div>
+      <div class="w-full">
+        <ul class="topnav list-none float-right text-sm xl:text-xl py-4 font-semibold text-gray-800">
+          <li class="pr-2 xl:pr-3 hover:text-green-400"><a href="index.html">Home</a></li>
+          <li class="pr-2 xl:pr-3 hover:text-green-400"><a href="#" class="text-green-500">Bakeries</a></li>
+          <li class="pr-2 xl:pr-3 hover:text-green-400"><a href="aboutUs.html">About us</a></li>
+          <li class="hover:text-green-400"><a href="contactUs.html">Contact us</a></li>
+        </ul>      
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="w-full" style="background-color: #F3F4F6;">
+    <h2 class="text-2xl font-semibold text-green-500 py-4" style="text-align: center;">All Bakeries</h2>
+  </div>
+
+  <!-- Cakes Section -->
+  <div class="w-full 2xl:px-48 py-12">
+    <h2 class="text-lg xl:text-2xl font-semibold text-gray-800" style="text-align: center;">Cakes</h2>
+
+    <!-- Bakeries -->
+    <div class="w-full px-2 lg:px-64 flex pt-8">
+
+      <!-- Product -->
+        <div class="card pb-4">
+          <img src="imgs/products/chocolate.jfif" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4 class="text-xl font-semibold text-gray-800 pt-2" >Chocolate Cake</h4> 
+            <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $21.00</del> Now $19.50</p> 
+            <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+          </div>
+        </div>
+
+      <!-- Product -->
+      <div class="card mx-4 xl:mx-32 pb-4">
+        <img src="imgs/products/vanilla.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Vanilla Cake</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $20.00</del> Now $19.00</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="card pb-4">
+        <img src="imgs/products/redvelvet.jfif" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Redvelvet Cake</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $25.00</del> Now $23.50</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Pies Section -->
+  <div class="w-full 2xl:px-48 py-12">
+    <h2 class="text-lg xl:text-2xl font-semibold text-gray-800" style="text-align: center;">Pies</h2>
+
+    <!-- Bakeries -->
+    <div class="w-full px-2 lg:px-64 flex pt-8">
+
+      <!-- Product -->
+        <div class="card pb-4">
+          <img src="imgs/products/chicken.jfif" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4 class="text-xl font-semibold text-gray-800 pt-2" >Chicken pie</h4> 
+            <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $1.50</del> Now $1.20</p> 
+            <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+          </div>
+        </div>
+
+      <!-- Product -->
+      <div class="card mx-4 xl:mx-32 pb-4">
+        <img src="imgs/products/beef.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Beef pie</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $1.50</del> Now $1.20</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="card pb-4">
+        <img src="imgs/products/pork.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Pork pie</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $0.80</del> Now $0.60</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Plain Section -->
+  <div class="w-full 2xl:px-48 py-12">
+    <h2 class="text-lg xl:text-2xl font-semibold text-gray-800" style="text-align: center;">Plain Bakeries</h2>
+
+    <!-- Bakeries -->
+    <div class="w-full px-2 lg:px-64 flex pt-8">
+
+      <!-- Product -->
+        <div class="card pb-4">
+          <img src="imgs/products/twist.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4 class="text-xl font-semibold text-gray-800 pt-2" >Twist bread</h4> 
+            <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $1.20</del> Now $0.90</p> 
+            <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+          </div>
+        </div>
+
+      <!-- Product -->
+      <div class="card mx-4 xl:mx-32 pb-4">
+        <img src="imgs/products/scones.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Scones</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $0.30</del> Now $0.20</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="card pb-4">
+        <img src="imgs/products/tealoaf.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 class="text-xl font-semibold text-gray-800 pt-2" >Tea loaf</h4> 
+          <p class="py-4 font-semibold text-green-500"><del class="text-red-500">From $0.60</del> Now $0.50</p> 
+          <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="w-full h-64 py-8" style="background-color: #F3F4F6;">
+    <h2 class="text-2xl font-semibold text-green-500 pb-16" style="text-align: center;">Delicious bakeries at your doorstep</h2>
+    <button class="text-xl text-white px-8 py-2 flex mr-auto ml-auto rounded-md" onclick="window.location.href='aboutUs.html';" style="background-color: #10B981;">Learn more</button>
+  </div>
+
+  <!-- Footer here -->
+  <div class="w-full 2xl:px-48 my-12">
+    <div class="w-full lg:px-32 px-2 flex">
+
+      <!-- About us -->
+     <div class=" flex-1">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" >About us </h2>
+      <p class="text-sm xl:text-md py-4 text-gray-700">Raymond Bakeries is a small private limited company which sells all
+        types of bakeries at very cheap and affordable <price class=""></price>
+        <b><a href="aboutUs.html" class="text-green-600"> Read more </a></b>
+      </p>
+     </div>
+
+     <!-- Quick links -->
+     <div class="flex-1 mx-12">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" > Quick links </h2>
+      <ul class="font-semibold text-sm xl:text-md text-gray-700 py-4">
+        <li class="pb-3"> <a href="index.html"> Home </a></li>
+        <li class="pb-3"> <a href="#" style="color: #10B981;"> Bakeries </a></li>
+        
+        <li class="pb-3"> <a href="aboutUs.html"> About us </a></li>
+        <li class="pb-3"> <a href="contactUs.html"> Contact us </a></li>
+      </ul>
+    </div>
+
+    <!-- Conatct us -->
+    <div class="flex-1">
+      <h2 class="text-md xl:text-lg text-gray-800 font-semibold" > Contact us </h2>
+      <div class="py-4">
+        <!-- Phone details -->
+        <div class="pb-4 text-sm xl:text-md">
+          <h2 class="font-semibold" style="color: #10B981;"> Phone details: </h2>
+          <p class="text-gray-700">+263 77 343 1504</p>
+        </div>
+        <!-- Email -->
+        <div class="pb-4 text-sm xl:text-md">
+          <h2 class="font-semibold" style="color: #10B981;"> Email: </h2>
+          <p class="text-gray-700">help@raymondbakeries.co.zw</p>
+        </div>
+        <!-- Physical address -->
+        <div class="pb-4 text-sm xl:text-md">
+          <h2 class="font-semibold" style="color: #10B981;"> Physical Address: </h2>
+          <address class="text-gray-700">
+            Raymond Bakeries <br>
+            22 Chinhoyi Rd <br>
+            Coldstream <br>
+            Chinhoyi, Zimbabwe <br>
+          </address>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Copyright section -->
+  <div class="w-full h-6 2xl:px-48" style="background-color: #F3F4F6;">
+    <div class="w-full h-6 lg:px-32 px-2 flex">
+      <p class="text-gray-800 w-full " style="font-size: 12px;">Quality policy </p>
+      <p class="text-gray-800 text-sm" style="text-align: end; white-space: nowrap;font-size: 12px">Copyright &copy; 2021|All rights reserved.</p>
+    </div>
+  </div>
+
+
+  <script>
+
+    var callCaption = setInterval(caption, 5000);
+    var trk = 1;
+    function caption(){
+      var cont = document.querySelector('#bgimages');
+
+      if(trk == 1){
+        trk++;
+        cont.style.backgroundImage = 'url(imgs/background.jpg)';
+      }else if(trk == 2){
+        trk = 0;
+        cont.style.backgroundImage = 'url(imgs/background2.jpg)';
+      }else{
+        trk++;
+        cont.style.backgroundImage = 'url(imgs/background3.jpg)';
+      }
+    }
+    //sticky header
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
